@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements>
+	<Element Name="Rho_GIRR" Type="Matrix">
+		<FirstCorr Name="0.25yr" Type ="Vector">
+			<Point>
+				<Tenor2>0.5yr</Tenor2>
+				<Value>97%</Value>
+			</Point>
+			<Point>
+				<Tenor2>1yr</Tenor2>
+				<Value>91%</Value>
+			</Point>
+			<Point>
+				<Tenor2>2yr</Tenor2>
+				<Value>81%</Value>
+			</Point>
+			<Point>
+				<Tenor2>3yr</Tenor2>
+				<Value>72%</Value>
+			</Point>
+			<Point>
+				<Tenor2>5yr</Tenor2>
+				<Value>57%</Value>
+			</Point>
+			<Point>
+				<Tenor2>10yr</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>15yr</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>20yr</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<FirstCorr Name ="0.5yr" Type ="Vector">
+			<Point>
+				<Tenor2>1yr</Tenor2>
+				<Value>97%</Value>
+			</Point>
+			<Point>
+				<Tenor2>2yr</Tenor2>
+				<Value>91%</Value>
+			</Point>
+			<Point>
+				<Tenor2>3yr</Tenor2>
+				<Value>86%</Value>
+			</Point>
+			<Point>
+				<Tenor2>5yr</Tenor2>
+				<Value>76%</Value>
+			</Point>
+			<Point>
+				<Tenor2>10yr</Tenor2>
+				<Value>57%</Value>
+			</Point>
+			<Point>
+				<Tenor2>15yr</Tenor2>
+				<Value>42%</Value>
+			</Point>
+			<Point>
+				<Tenor2>20yr</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<FirstCorr Name ="1yr" Type ="Vector">
+			<Point>
+				<Tenor2>2yr</Tenor2>
+				<Value>97%</Value>
+			</Point>
+			<Point>
+				<Tenor2>3yr</Tenor2>
+				<Value>94%</Value>
+			</Point>
+			<Point>
+				<Tenor2>5yr</Tenor2>
+				<Value>89%</Value>
+			</Point>
+			<Point>
+				<Tenor2>10yr</Tenor2>
+				<Value>76%</Value>
+			</Point>
+			<Point>
+				<Tenor2>15yr</Tenor2>
+				<Value>66%</Value>
+			</Point>
+			<Point>
+				<Tenor2>20yr</Tenor2>
+				<Value>57%</Value>
+			</Point>
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>42%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<FirstCorr Name ="2yr" Type ="Vector">
+			<Point>
+				<Tenor2>3yr</Tenor2>
+				<Value>99%</Value>
+			</Point>
+			<Point>
+				<Tenor2>5yr</Tenor2>
+				<Value>96%</Value>
+			</Point>
+			<Point>
+				<Tenor2>10yr</Tenor2>
+				<Value>89%</Value>
+			</Point>
+			<Point>
+				<Tenor2>15yr</Tenor2>
+				<Value>82%</Value>
+			</Point>
+			<Point>
+				<Tenor2>20yr</Tenor2>
+				<Value>76%</Value>
+			</Point>
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>66%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<FirstCorr Name ="3yr" Type ="Vector">
+			<Point>
+				<Tenor2>5yr</Tenor2>
+				<Value>98%</Value>
+			</Point>
+			<Point>
+				<Tenor2>10yr</Tenor2>
+				<Value>93%</Value>
+			</Point>
+			<Point>
+				<Tenor2>15yr</Tenor2>
+				<Value>89%</Value>
+			</Point>
+			<Point>
+				<Tenor2>20yr</Tenor2>
+				<Value>84%</Value>
+			</Point>
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>76%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<FirstCorr Name ="5yr" Type ="Vector">
+			<Point>
+				<Tenor2>10yr</Tenor2>
+				<Value>97%</Value>
+			</Point>
+			<Point>
+				<Tenor2>15yr</Tenor2>
+				<Value>94%</Value>
+			</Point>
+			<Point>
+				<Tenor2>20yr</Tenor2>
+				<Value>91%</Value>
+			</Point>
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>86%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<First_Corr Name ="10yr" Type ="Vector">
+			<Point>
+				<Tenor2>15yr</Tenor2>
+				<Value>99%</Value>
+			</Point>
+			<Point>
+				<Tenor2>20yr</Tenor2>
+				<Value>97%</Value>
+			</Point>
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>94%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<FirstCorr Name ="15yr" Type ="Vector">
+			<Point>
+				<Tenor2>20yr</Tenor2>
+				<Value>99%</Value>
+			</Point>
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>97%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<FirstCorr Name ="20yr" Type ="Vector">
+			<Point>
+				<Tenor2>30yr</Tenor2>
+				<Value>99%</Value>
+			</Point>
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</First_Corr>
+		
+		<FirstCorr Name ="30yr" Type ="Vector">
+			<Point>
+				<Tenor2>inflation</Tenor2>
+				<Value>40%</Value>
+			</Point>
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+		<FirstCorr Name ="inflation" Type ="Vector">
+			<Point>
+				<Tenor2>XCCY basis - USD</Tenor2>
+				<Value>0%</Value>
+			</Point>
+		</FirstCorr>
+		
+	</Element>
+
+</Elements>

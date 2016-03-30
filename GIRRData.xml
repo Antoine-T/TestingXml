@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements>
+	<Element Name="RW_GIRR" Type="Vector">
+		<Point>
+			<Tenor>0.25yr</Tenor>
+			<Value>1.60</Value>
+		</Point>
+		<Point>
+			<Tenor>0.5yr</Tenor>
+			<Value>1.60</Value>
+		</Point>
+		<Point>
+			<Tenor>1yr</Tenor>
+			<Value>1.50</Value>
+		</Point>
+		<Point>
+			<Tenor>2yr</Tenor>
+			<Value>1.25</Value>
+		</Point>
+		<Point>
+			<Tenor>3yr</Tenor>
+			<Value>1.15</Value>
+		</Point>
+		<Point>
+			<Tenor>5yr</Tenor>
+			<Value>1.00</Value>
+		</Point>
+		<Point>
+			<Tenor>10yr</Tenor>
+			<Value>1.00</Value>
+		</Point>
+		<Point>
+			<Tenor>15yr</Tenor>
+			<Value>1.00</Value>
+		</Point>
+		<Point>
+			<Tenor>20yr</Tenor>
+			<Value>1.00</Value>
+		</Point>
+		<Point>
+			<Tenor>30yr</Tenor>
+			<Value>1.00</Value>
+		</Point>
+		<Point>
+			<Tenor>inflation</Tenor>
+			<Value>1.50</Value>
+		</Point>
+		<Point>
+			<Tenor>XCCY basis - USD</Tenor>
+			<Value>1.50</Value>
+		</Point>
+	</Element>
+	<Element Name="xRho_GIRR" Type="Scalar">
+		<Value>0.1</Value>
+	</Element>
+	<Element Name="ALPHA_GIRR" Type="Scalar">
+		<Value>0.1</Value>
+	</Element>
+	<Element Name="gammaCcy_GIRR" Type="Scalar">
+		<Value>50</Value>
+	</Element>
+	<Element Name="RWVega_GIRR" Type="Scalar">
+		<Value>55</Value>
+	</Element>
+	<Element Name="Liquidity_Horizon" Type="Scalar">
+		<Value>60</Value>
+	</Element>
+	<Element Name="Thetha" Type="Scalar">
+		<Value>3</Value>
+	</Element>
+	<Element Name="RW_VEGA" Type = "Vector">
+		<Value>55</Value>
+	</Element>
+</Elements>
