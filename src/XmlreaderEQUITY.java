@@ -195,5 +195,38 @@ public class XmlreaderEQUITY {
             }
     		return Double.parseDouble(result)/100;
     	}
-
+        public static Map<EquityBucket, Double> EQUITYRHO(){  
+            
+            Map<EquityBucket,Double> WeightingVector = new HashMap<>();
+            
+            Element docEle = equity.getDocumentElement();
+            NodeList nl = docEle.getElementsByTagName("Element");
+            
+            if(nl != null && nl.getLength() > 0) {
+                 for(int i = 0 ; i < nl.getLength();i++) {
+                	 
+                      Element el = (Element)nl.item(i);
+                      String MatiereName = el.getAttribute("Name");
+    				if (MatiereName.equals("RHO_EQUITY"))// Stops at the right Risk Class
+    				{
+    					NodeList VectorKey = el.getElementsByTagName("Bucket");
+    					NodeList VectorObject = el.getElementsByTagName("Value");
+    					for(int j = 0; j< VectorKey.getLength(); j++){
+    						for(EquityBucket sample : EquityBucket.values()){
+    							if(sample.getBucket().equals(VectorKey.item(j).getTextContent())){
+    								WeightingVector.put(sample,Double.parseDouble(VectorObject.item(j).getTextContent())/100);
+    							}	        	
+    				        }
+    						
+    					}
+    					
+    					//result=el.getElementsByTagName("Tenor").item(0).getTextContent();
+    				}
+                      
+                 }
+                 
+            }
+    		return WeightingVector;
+    	}
+ 
 }
