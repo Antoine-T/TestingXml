@@ -68,7 +68,4 @@
 	<Element Name="Thetha" Type="Scalar">
 		<Value>3</Value>
 	</Element>
-	<Element Name="RW_VEGA" Type = "Vector">
-		<Value>55</Value>
-	</Element>
 </Elements>

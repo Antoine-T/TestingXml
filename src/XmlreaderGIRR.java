@@ -40,27 +40,9 @@ public class XmlreaderGIRR {
 	}
 	
 	public static double alpha(){
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        Document dom=null;
-        
-        try {
-
-             //Using factory get an instance of document builder
-             DocumentBuilder db = dbf.newDocumentBuilder();
-
-             //parse using builder to get DOM representation of the XML file
-             dom = db.parse("GIRRData.xml");
-
-        }catch(ParserConfigurationException pce) {
-             pce.printStackTrace();
-        }catch(SAXException se) {
-             se.printStackTrace();
-        }catch(IOException ioe) {
-             ioe.printStackTrace();
-        }
 
         
-        Element docEle = dom.getDocumentElement();
+        Element docEle = girr.getDocumentElement();
         
         String result = new String();
 
@@ -134,27 +116,10 @@ public class XmlreaderGIRR {
 		return Double.parseDouble(result)/100;
 	}
     public static double GIRRtheta() {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        Document dom=null;
-        
-        try {
-
-             //Using factory get an instance of document builder
-             DocumentBuilder db = dbf.newDocumentBuilder();
-
-             //parse using builder to get DOM representation of the XML file
-             dom = db.parse("GIRRData.xml");
-
-        }catch(ParserConfigurationException pce) {
-             pce.printStackTrace();
-        }catch(SAXException se) {
-             se.printStackTrace();
-        }catch(IOException ioe) {
-             ioe.printStackTrace();
-        }
+     
 
         
-        Element docEle = dom.getDocumentElement();
+        Element docEle = girr.getDocumentElement();
         
         String result = new String();
 
@@ -179,27 +144,9 @@ public class XmlreaderGIRR {
 		return Double.parseDouble(result)/100;
 	}
     public static double GIRRgamma() {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        Document dom=null;
         
-        try {
-
-             //Using factory get an instance of document builder
-             DocumentBuilder db = dbf.newDocumentBuilder();
-
-             //parse using builder to get DOM representation of the XML file
-             dom = db.parse("GIRRData.xml");
-
-        }catch(ParserConfigurationException pce) {
-             pce.printStackTrace();
-        }catch(SAXException se) {
-             se.printStackTrace();
-        }catch(IOException ioe) {
-             ioe.printStackTrace();
-        }
-
         
-        Element docEle = dom.getDocumentElement();
+        Element docEle = girr.getDocumentElement();
         
         String result = new String();
 
@@ -224,27 +171,9 @@ public class XmlreaderGIRR {
 		return Double.parseDouble(result)/100;
 	}
     public static double GIRRlh() {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        Document dom=null;
         
-        try {
-
-             //Using factory get an instance of document builder
-             DocumentBuilder db = dbf.newDocumentBuilder();
-
-             //parse using builder to get DOM representation of the XML file
-             dom = db.parse("GIRRData.xml");
-
-        }catch(ParserConfigurationException pce) {
-             pce.printStackTrace();
-        }catch(SAXException se) {
-             se.printStackTrace();
-        }catch(IOException ioe) {
-             ioe.printStackTrace();
-        }
-
         
-        Element docEle = dom.getDocumentElement();
+        Element docEle = girr.getDocumentElement();
         
         String result = new String();
 
@@ -269,27 +198,10 @@ public class XmlreaderGIRR {
 		return Double.parseDouble(result);
 	}
     public static Map<IRTenor, Double> GIRRweights(){  
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        Document dom=null;
         
-        try {
-
-             //Using factory get an instance of document builder
-             DocumentBuilder db = dbf.newDocumentBuilder();
-
-             //parse using builder to get DOM representation of the XML file
-             dom = db.parse("GIRRData.xml");
-
-        }catch(ParserConfigurationException pce) {
-             pce.printStackTrace();
-        }catch(SAXException se) {
-             se.printStackTrace();
-        }catch(IOException ioe) {
-             ioe.printStackTrace();
-        }
         Map<IRTenor,Double> WeightingVector = new HashMap<>();
         
-        Element docEle = dom.getDocumentElement();
+        Element docEle = girr.getDocumentElement();
         NodeList nl = docEle.getElementsByTagName("Element");
         
         if(nl != null && nl.getLength() > 0) {
