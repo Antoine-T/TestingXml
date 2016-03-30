@@ -101,4 +101,7 @@
 	<Element Name="Small_Liquidity_Horizon" Type="Scalar">
 		<Value>120</Value>
 	</Element>
+	<Element Name="ALPHA_EQUITY" Type="Scalar">
+		<Value>0.1</Value>
+	</Element>
 </Elements>

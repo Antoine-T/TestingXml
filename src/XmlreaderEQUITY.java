@@ -117,7 +117,7 @@ public class XmlreaderEQUITY {
             }
     		return Double.parseDouble(result)/100;
     	}
-        public static Map<EquityBucket, Double> Equityweights(){  
+        public static Map<EquityBucket, Double> EQUITYweights(){  
             
             Map<EquityBucket,Double> WeightingVector = new HashMap<>();
             
@@ -149,6 +149,51 @@ public class XmlreaderEQUITY {
                  
             }
     		return WeightingVector;
+    	}
+    	public static double alpha(){
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            Document dom=null;
+            
+            try {
+
+                 //Using factory get an instance of document builder
+                 DocumentBuilder db = dbf.newDocumentBuilder();
+
+                 //parse using builder to get DOM representation of the XML file
+                 dom = db.parse("EQUITYData.xml");
+
+            }catch(ParserConfigurationException pce) {
+                 pce.printStackTrace();
+            }catch(SAXException se) {
+                 se.printStackTrace();
+            }catch(IOException ioe) {
+                 ioe.printStackTrace();
+            }
+
+            
+            Element docEle = dom.getDocumentElement();
+            
+            String result = new String();
+
+            
+            
+        	
+            NodeList nl = docEle.getElementsByTagName("Element");
+            
+            if(nl != null && nl.getLength() > 0) {
+                 for(int i = 0 ; i < nl.getLength();i++) {
+                	 
+                      Element el = (Element)nl.item(i);
+                      String MatiereName = el.getAttribute("Name");
+    				if (MatiereName.equals("ALPHA_EQUITY"))// Stops at the right Risk Class
+    				{
+    					result=el.getElementsByTagName("Value").item(0).getTextContent();
+    				}
+                      
+                 }
+                 
+            }
+    		return Double.parseDouble(result)/100;
     	}
 
 }
