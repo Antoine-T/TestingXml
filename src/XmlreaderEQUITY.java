@@ -17,6 +17,7 @@ public class XmlreaderEQUITY {
 		private static Document equity;
 		private  DocumentBuilderFactory dbf;
 		private DocumentBuilder db;
+		
 		public XmlreaderEQUITY()
 		{
 			this.dbf = DocumentBuilderFactory.newInstance();
@@ -39,9 +40,7 @@ public class XmlreaderEQUITY {
 	        }
 	        
 		}
-		
-		
-        
+   
         public static double EQUITY_Large_lh() {
            
             Element docEle = equity.getDocumentElement();
@@ -74,9 +73,6 @@ public class XmlreaderEQUITY {
             
             String result = new String();
 
-            
-            
-        	
             NodeList nl = docEle.getElementsByTagName("Element");
             
             if(nl != null && nl.getLength() > 0) {
@@ -115,7 +111,7 @@ public class XmlreaderEQUITY {
                  }
                  
             }
-    		return Double.parseDouble(result)/100;
+    		return Double.parseDouble(result);
     	}
         public static Map<EquityBucket, Double> EQUITYweights(){  
             
@@ -136,13 +132,13 @@ public class XmlreaderEQUITY {
     					for(int j = 0; j< VectorKey.getLength(); j++){
     						for(EquityBucket sample : EquityBucket.values()){
     							if(sample.getBucket().equals(VectorKey.item(j).getTextContent())){
-    								WeightingVector.put(sample,Double.parseDouble(VectorObject.item(j).getTextContent())/100);
+    								WeightingVector.put(sample,Double.parseDouble(VectorObject.item(j).getTextContent()));
     							}	        	
     				        }
     						
     					}
     					
-    					//result=el.getElementsByTagName("Tenor").item(0).getTextContent();
+    					
     				}
                       
                  }
@@ -151,33 +147,11 @@ public class XmlreaderEQUITY {
     		return WeightingVector;
     	}
     	public static double alpha(){
-            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            Document dom=null;
             
-            try {
-
-                 //Using factory get an instance of document builder
-                 DocumentBuilder db = dbf.newDocumentBuilder();
-
-                 //parse using builder to get DOM representation of the XML file
-                 dom = db.parse("EQUITYData.xml");
-
-            }catch(ParserConfigurationException pce) {
-                 pce.printStackTrace();
-            }catch(SAXException se) {
-                 se.printStackTrace();
-            }catch(IOException ioe) {
-                 ioe.printStackTrace();
-            }
-
-            
-            Element docEle = dom.getDocumentElement();
+            Element docEle = equity.getDocumentElement();
             
             String result = new String();
-
-            
-            
-        	
+    	
             NodeList nl = docEle.getElementsByTagName("Element");
             
             if(nl != null && nl.getLength() > 0) {
@@ -193,7 +167,7 @@ public class XmlreaderEQUITY {
                  }
                  
             }
-    		return Double.parseDouble(result)/100;
+    		return Double.parseDouble(result);
     	}
         public static Map<EquityBucket, Double> EQUITYRHO(){  
             
@@ -214,13 +188,12 @@ public class XmlreaderEQUITY {
     					for(int j = 0; j< VectorKey.getLength(); j++){
     						for(EquityBucket sample : EquityBucket.values()){
     							if(sample.getBucket().equals(VectorKey.item(j).getTextContent())){
-    								WeightingVector.put(sample,Double.parseDouble(VectorObject.item(j).getTextContent())/100);
+    								WeightingVector.put(sample,Double.parseDouble(VectorObject.item(j).getTextContent()));
     							}	        	
     				        }
     						
     					}
-    					
-    					//result=el.getElementsByTagName("Tenor").item(0).getTextContent();
+
     				}
                       
                  }

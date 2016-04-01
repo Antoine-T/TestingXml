@@ -17,7 +17,7 @@ public class XmlreaderGIRR {
 	private static Document girr;
 	private  DocumentBuilderFactory dbf;
 	private DocumentBuilder db;
-	XmlreaderGIRR(){
+	public XmlreaderGIRR(){
 		this.dbf = DocumentBuilderFactory.newInstance();
         XmlreaderGIRR.girr=null;
         
@@ -90,7 +90,7 @@ public class XmlreaderGIRR {
         }
 		return Double.parseDouble(result);
 	}
-    public static  double GIRRx() {
+    public static  double x() {
 
     
         Element docEle = girr.getDocumentElement();
@@ -115,7 +115,7 @@ public class XmlreaderGIRR {
         }
 		return Double.parseDouble(result)/100;
 	}
-    public static double GIRRtheta() {
+    public static double theta() {
      
 
         
